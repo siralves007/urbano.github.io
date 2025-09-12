@@ -1,0 +1,46 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Urbano</title>
+    <link rel="stylesheet" href="CSS/style2.css">
+</head>
+<body>
+
+    <header>
+        <h1>Fotografo Urbano</h1>
+        <p>"Somos urbanos e fotografos"</p>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Página de Cadastro e Contato</h2>
+            <p>Preencha os campos abaixo para marcar aquelas fotos bem urbanas.</p>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                </div>
+                <div class="form-group">
+                    <label for="data">Qual melhor dia?</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Qual lugar?</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite o bairro urbano"></textarea>
+                </div>
+                <button onclick="alert('Obrigado por se cadastrar! Entraremos em contato em breve.')"> Enviar </button>
+            </form>
+        </section>
+    </main>
