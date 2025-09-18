@@ -1,38 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/style.css">
-  <title>Fotografo urbano</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Habilidades</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-     <h1>Fotografo urbano</h1>
-    <h3>O que somos?</h3>
-    <p>Fotografo urbano é uma empresa que gosta de tirar fotos de prédios e fazemos isso de graça, desde que você pague o nosso lanche.</p>
+
+    <!-- Navbar -->
+    <header class="cabecalho">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                </a>
+                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#midia">Midia</a></li>
+                        <li class="nav-item"><a class="nav-link" href= "#tabela">Tabela</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#formulario">formulario</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo original -->
+    <header>
+        <h1 id="titulo">Bem-vindo ao meu Portfólio!</h1>
+        <p>Esta página fala um pouco sobre mim.</p>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre mim</h2>
+        <img src="img/foto1.jpg" alt="Uma mesa de computador com acessórios de produtividade nela" class="foto">
+        <p>Eu sou o Matheus. Gosto muito da área de ensino de tecnologia para crianças com metodologia gamificada.</p>
+    </section>
+
+    <section id="midia">
+        <h2>Um pouco do que gosto</h2>
+        <p>Esse canal é de resolução de sudokus com regras diferentes. Eu não consigo fazer nada, mas amo acompanhar o raciocínio lógico dele.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Xv8D0737qfc?si=LAvlkVQS1qYQXjdn" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+    <section id="tabela">
+        <h2>Meus Hobbies e Gostos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hobby</th>
+                    <th>Nível de Habilidade</th>
+                    <th>Motivo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Xadrez</td>
+                    <td>Avançado</td>
+                    <td>Ajuda no raciocínio lógico</td>
+                </tr>
+                <tr>
+                    <td>Robótica</td>
+                    <td>Intermediário</td>
+                    <td>Adoro construir e programar</td>
+                </tr>
+                <tr>
+                    <td>Filmes</td>
+                    <td>Amante</td>
+                    <td>Gosto de histórias envolventes</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="formulario">
+        <h2>Contato / Feedback</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="exemplo: nome@provedor.com.br" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="30"></textarea>
+
+            <p>O que você achou da página?</p>
+            <input type="radio" id="gostei" name="opiniao" value="Gostei">
+            <label for="gostei">Gostei</label>
+            <input type="radio" id="naoGostei" name="opiniao" value="Não Gostei">
+            <label for="naoGostei">Não Gostei</label>
+
+            <input type="checkbox" id="termos" name="termos" required>
+            <label for="termos">Concordo com os termos fictícios</label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-<table>
-    <thead>
-        <tr>
-            <th>Dias da Semana</th>
-            <th>Locais</th>
-            <th>Preço</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Todos</td>
-            <td>Urbanos</td>
-            <td>Nosso lanche</td>
-        </tr>
-        
-    </tbody>
-</table>
-
-<button onclick="window.location.href='cadastro_do_site.html'">
-  Clique para entrar em contato conosco
-</button>
-
-
 </html>
